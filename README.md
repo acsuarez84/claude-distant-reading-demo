@@ -5,7 +5,7 @@ A comprehensive computational analysis system for studying how different Large L
 ## Project Overview
 
 This project analyzes responses from three AI systems:
-- **Poe.com Chatbot** (ad-hoc, conversational responses with code-switching)
+- **Translinguo Chatbot** (ad-hoc, conversational responses with code-switching)
 - **ChatGPT** (generative, formal analytical approach)
 - **Claude.AI** (agentic, structured interpretation)
 
