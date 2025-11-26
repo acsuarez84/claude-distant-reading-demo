@@ -255,18 +255,29 @@ class TheoreticalAnalyzer:
         consistency = min(1.0, total_refs / 15)
         alignment = min(1.0, multimodal_density / 3)
 
+        qualitative = {
+            'visual_literacy_refs': visual_refs,
+            'spatial_literacy_refs': spatial_refs,
+            'gestural_literacy_refs': gestural_refs,
+            'multimodal_integration': 'High' if total_refs > 10 else 'Medium' if total_refs > 5 else 'Low'
+        }
+
+        quantitative = {
+            'consistency_score': round(consistency, 3),
+            'alignment_score': round(alignment, 3),
+            'multimodal_density': round(multimodal_density, 2)
+        }
+
+        # Generate sophisticated theoretical analysis
+        analysis = self.frameworks.multiliteracies_analysis(
+            metrics={'qualitative': qualitative, 'quantitative': quantitative},
+            text=text
+        )
+
         return {
-            'qualitative': {
-                'visual_literacy_refs': visual_refs,
-                'spatial_literacy_refs': spatial_refs,
-                'gestural_literacy_refs': gestural_refs,
-                'multimodal_integration': 'High' if total_refs > 10 else 'Medium' if total_refs > 5 else 'Low'
-            },
-            'quantitative': {
-                'consistency_score': round(consistency, 3),
-                'alignment_score': round(alignment, 3),
-                'multimodal_density': round(multimodal_density, 2)
-            }
+            'qualitative': qualitative,
+            'quantitative': quantitative,
+            'analysis': analysis
         }
 
     def analyze_multimodality(self, text: str) -> Dict[str, Any]:
@@ -303,19 +314,30 @@ class TheoreticalAnalyzer:
         consistency = min(1.0, total_multimodal / 12)
         alignment = min(1.0, interpretation_markers / 8)
 
+        qualitative = {
+            'visual_descriptions': visual_desc,
+            'spatial_descriptions': spatial_desc,
+            'kinesthetic_descriptions': kinesthetic_desc,
+            'interpretation_integration': interpretation_markers,
+            'multimodal_approach': 'Integrated' if interpretation_markers > 5 else 'Descriptive' if total_multimodal > 8 else 'Basic'
+        }
+
+        quantitative = {
+            'consistency_score': round(consistency, 3),
+            'alignment_score': round(alignment, 3),
+            'multimodal_ratio': round(total_multimodal / max(total_words, 1) * 100, 2)
+        }
+
+        # Generate sophisticated theoretical analysis
+        analysis = self.frameworks.multimodality_analysis(
+            metrics={'qualitative': qualitative, 'quantitative': quantitative},
+            text=text
+        )
+
         return {
-            'qualitative': {
-                'visual_descriptions': visual_desc,
-                'spatial_descriptions': spatial_desc,
-                'kinesthetic_descriptions': kinesthetic_desc,
-                'interpretation_integration': interpretation_markers,
-                'multimodal_approach': 'Integrated' if interpretation_markers > 5 else 'Descriptive' if total_multimodal > 8 else 'Basic'
-            },
-            'quantitative': {
-                'consistency_score': round(consistency, 3),
-                'alignment_score': round(alignment, 3),
-                'multimodal_ratio': round(total_multimodal / max(total_words, 1) * 100, 2)
-            }
+            'qualitative': qualitative,
+            'quantitative': quantitative,
+            'analysis': analysis
         }
 
     def analyze_rhetorical_listening(self, text: str) -> Dict[str, Any]:
@@ -349,19 +371,30 @@ class TheoreticalAnalyzer:
         consistency = min(1.0, (empathy_markers + cultural_markers) / 10)
         alignment = min(1.0, perspective_markers / 20)
 
+        qualitative = {
+            'empathy_markers': empathy_markers,
+            'cultural_acknowledgment': cultural_markers,
+            'perspective_taking': perspective_markers,
+            'questioning_engagement': question_markers,
+            'listening_stance': 'Deep' if empathy_markers > 5 else 'Moderate' if empathy_markers > 2 else 'Surface'
+        }
+
+        quantitative = {
+            'consistency_score': round(consistency, 3),
+            'alignment_score': round(alignment, 3),
+            'empathy_density': round(empathy_markers / max(total_words, 1) * 100, 2)
+        }
+
+        # Generate sophisticated theoretical analysis
+        analysis = self.frameworks.rhetorical_listening_analysis(
+            metrics={'qualitative': qualitative, 'quantitative': quantitative},
+            text=text
+        )
+
         return {
-            'qualitative': {
-                'empathy_markers': empathy_markers,
-                'cultural_acknowledgment': cultural_markers,
-                'perspective_taking': perspective_markers,
-                'questioning_engagement': question_markers,
-                'listening_stance': 'Deep' if empathy_markers > 5 else 'Moderate' if empathy_markers > 2 else 'Surface'
-            },
-            'quantitative': {
-                'consistency_score': round(consistency, 3),
-                'alignment_score': round(alignment, 3),
-                'empathy_density': round(empathy_markers / max(total_words, 1) * 100, 2)
-            }
+            'qualitative': qualitative,
+            'quantitative': quantitative,
+            'analysis': analysis
         }
 
     def analyze_code_meshing(self, text: str) -> Dict[str, Any]:
@@ -458,19 +491,30 @@ class TheoreticalAnalyzer:
         consistency = min(1.0, (pattern_words + general_words) / 8)
         alignment = min(1.0, abstract_markers / 6)
 
+        qualitative = {
+            'pattern_recognition': pattern_words,
+            'generalizations': general_words,
+            'specific_details': specific_words,
+            'abstraction_markers': abstract_markers,
+            'analytical_approach': 'Abstract' if general_words > specific_words else 'Concrete' if specific_words > general_words else 'Balanced'
+        }
+
+        quantitative = {
+            'consistency_score': round(consistency, 3),
+            'alignment_score': round(alignment, 3),
+            'abstraction_ratio': round(general_words / max(specific_words, 1), 2)
+        }
+
+        # Generate sophisticated theoretical analysis
+        analysis = self.frameworks.big_data_analysis(
+            metrics={'qualitative': qualitative, 'quantitative': quantitative},
+            text=text
+        )
+
         return {
-            'qualitative': {
-                'pattern_recognition': pattern_words,
-                'generalizations': general_words,
-                'specific_details': specific_words,
-                'abstraction_markers': abstract_markers,
-                'analytical_approach': 'Abstract' if general_words > specific_words else 'Concrete' if specific_words > general_words else 'Balanced'
-            },
-            'quantitative': {
-                'consistency_score': round(consistency, 3),
-                'alignment_score': round(alignment, 3),
-                'abstraction_ratio': round(general_words / max(specific_words, 1), 2)
-            }
+            'qualitative': qualitative,
+            'quantitative': quantitative,
+            'analysis': analysis
         }
 
     def analyze_composing_with_ai(self, text: str) -> Dict[str, Any]:
@@ -508,20 +552,31 @@ class TheoreticalAnalyzer:
         consistency = min(1.0, (active_voice + passive_voice) / 15)
         alignment = min(1.0, tentative_statements / 10)
 
+        qualitative = {
+            'active_voice_instances': active_voice,
+            'passive_voice_instances': passive_voice,
+            'definitive_statements': definitive_statements,
+            'tentative_statements': tentative_statements,
+            'authoritative_markers': authoritative_markers,
+            'positioning_style': 'Authoritative' if authoritative_markers > 3 else 'Tentative' if tentative_statements > definitive_statements else 'Balanced'
+        }
+
+        quantitative = {
+            'consistency_score': round(consistency, 3),
+            'alignment_score': round(alignment, 3),
+            'voice_ratio': round(active_voice / max(passive_voice, 1), 2)
+        }
+
+        # Generate sophisticated theoretical analysis
+        analysis = self.frameworks.composing_with_ai_analysis(
+            metrics={'qualitative': qualitative, 'quantitative': quantitative},
+            text=text
+        )
+
         return {
-            'qualitative': {
-                'active_voice_instances': active_voice,
-                'passive_voice_instances': passive_voice,
-                'definitive_statements': definitive_statements,
-                'tentative_statements': tentative_statements,
-                'authoritative_markers': authoritative_markers,
-                'positioning_style': 'Authoritative' if authoritative_markers > 3 else 'Tentative' if tentative_statements > definitive_statements else 'Balanced'
-            },
-            'quantitative': {
-                'consistency_score': round(consistency, 3),
-                'alignment_score': round(alignment, 3),
-                'voice_ratio': round(active_voice / max(passive_voice, 1), 2)
-            }
+            'qualitative': qualitative,
+            'quantitative': quantitative,
+            'analysis': analysis
         }
 
 
