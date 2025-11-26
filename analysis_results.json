@@ -259,13 +259,15 @@
                     "empathy_density": 1.28
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 1 cultural acknowledgments, and 1 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 1 cultural acknowledgments, 1 instances of perspective-taking (\"you\", \"we\", \"our\"), and 2 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 2 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -560,13 +562,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 4 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 4 instances of perspective-taking (\"you\", \"we\", \"our\"), and 2 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 2 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -864,13 +868,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 2 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 2 instances of perspective-taking (\"you\", \"we\", \"our\"), and 1 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 1 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -1180,13 +1186,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 2 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 2 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -1488,13 +1496,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, and 5 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, 5 instances of perspective-taking (\"you\", \"we\", \"our\"), and 6 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 6 questions demonstrates what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -1803,13 +1813,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, and 5 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, 5 instances of perspective-taking (\"you\", \"we\", \"our\"), and 6 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 6 questions demonstrates what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -2115,13 +2127,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 2 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 2 instances of perspective-taking (\"you\", \"we\", \"our\"), and 1 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 1 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -2407,13 +2421,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 3 cultural acknowledgments, and 3 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 3 cultural acknowledgments, 3 instances of perspective-taking (\"you\", \"we\", \"our\"), and 5 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 5 questions demonstrates what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -2701,13 +2717,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -2973,13 +2991,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -3275,13 +3295,15 @@
                     "empathy_density": 0.48
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 1 cultural acknowledgments, and 13 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 1 cultural acknowledgments, 13 instances of perspective-taking (\"you\", \"we\", \"our\"), and 2 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 2 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -3558,13 +3580,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 1 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 1 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -3793,13 +3817,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -4085,13 +4111,15 @@
                     "empathy_density": 0.66
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 1 cultural acknowledgments, and 10 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 1 cultural acknowledgments, 10 instances of perspective-taking (\"you\", \"we\", \"our\"), and 3 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 3 questions demonstrates what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -4389,13 +4417,15 @@
                     "empathy_density": 0.68
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 0 cultural acknowledgments, and 9 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 0 cultural acknowledgments, 9 instances of perspective-taking (\"you\", \"we\", \"our\"), and 1 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 1 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -4681,13 +4711,15 @@
                     "empathy_density": 0.63
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 0 cultural acknowledgments, and 16 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 0 cultural acknowledgments, 16 instances of perspective-taking (\"you\", \"we\", \"our\"), and 2 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 2 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -4975,13 +5007,15 @@
                     "empathy_density": 0.58
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 0 cultural acknowledgments, and 16 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 0 cultural acknowledgments, 16 instances of perspective-taking (\"you\", \"we\", \"our\"), and 2 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 2 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -5273,13 +5307,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 1 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 1 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -5551,13 +5587,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 1 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 1 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -5843,13 +5881,15 @@
                     "empathy_density": 0.87
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 0 cultural acknowledgments, and 10 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 0 cultural acknowledgments, 10 instances of perspective-taking (\"you\", \"we\", \"our\"), and 1 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 1 questions suggests limited what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -6143,13 +6183,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -6378,13 +6420,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -6662,13 +6706,15 @@
                     "empathy_density": 0.47
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -6962,13 +7008,15 @@
                     "empathy_density": 0.57
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 4 empathetic positioning markers, 2 cultural acknowledgments, and 1 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "This pattern aligns with Ratcliffe's (2005) concept of rhetorical listening as \"a stance of openness that a person may choose to assume in relation to any person, text, or culture.\" The LLM demonstrates what Ratcliffe calls \"standing under\"—occupying a space of receptivity rather than mastery. By foregrounding empathy and cultural acknowledgment, the response enacts listening as accountability, recognizing (as Royster argues) that interpretation is always situated, never neutral.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's strong engagement with cultural positioning suggests accountability to the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response cultivates that art.",
+                    "pattern_description": "The response demonstrates 4 empathetic positioning markers, 2 cultural acknowledgments, 1 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "This pattern exemplifies Ratcliffe's (2005) concept of rhetorical listening as \"a trope for interpretive invention and more specifically as a code of cross-cultural conduct.\" The LLM demonstrates what Ratcliffe calls \"standing under\"—occupying a space of receptivity rather than mastery. By foregrounding empathy and cultural acknowledgment, the response enacts listening as accountability, recognizing (as Royster 1996 argues) that interpretation is always situated, never neutral. The 0 questions suggest what Glenn (2004) identifies as productive silence—leaving space for others' voices rather than filling all interpretive gaps. This aligns with Glenn & Ratcliffe's (2011) argument that \"listening, like silence, is not passive; it is a rhetorical art\" requiring active, intentional cultivation.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's strong engagement with cultural positioning suggests accountability to the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -7246,13 +7294,15 @@
                     "empathy_density": 0.63
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 4 empathetic positioning markers, 2 cultural acknowledgments, and 1 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "This pattern aligns with Ratcliffe's (2005) concept of rhetorical listening as \"a stance of openness that a person may choose to assume in relation to any person, text, or culture.\" The LLM demonstrates what Ratcliffe calls \"standing under\"—occupying a space of receptivity rather than mastery. By foregrounding empathy and cultural acknowledgment, the response enacts listening as accountability, recognizing (as Royster argues) that interpretation is always situated, never neutral.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's strong engagement with cultural positioning suggests accountability to the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response cultivates that art.",
+                    "pattern_description": "The response demonstrates 4 empathetic positioning markers, 2 cultural acknowledgments, 1 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "This pattern exemplifies Ratcliffe's (2005) concept of rhetorical listening as \"a trope for interpretive invention and more specifically as a code of cross-cultural conduct.\" The LLM demonstrates what Ratcliffe calls \"standing under\"—occupying a space of receptivity rather than mastery. By foregrounding empathy and cultural acknowledgment, the response enacts listening as accountability, recognizing (as Royster 1996 argues) that interpretation is always situated, never neutral. The 0 questions suggest what Glenn (2004) identifies as productive silence—leaving space for others' voices rather than filling all interpretive gaps. This aligns with Glenn & Ratcliffe's (2011) argument that \"listening, like silence, is not passive; it is a rhetorical art\" requiring active, intentional cultivation.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's strong engagement with cultural positioning suggests accountability to the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -7530,13 +7580,15 @@
                     "empathy_density": 0.32
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -7826,13 +7878,15 @@
                     "empathy_density": 0.59
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 0 cultural acknowledgments, and 1 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 0 cultural acknowledgments, 1 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -8113,13 +8167,15 @@
                     "empathy_density": 0.36
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 2 cultural acknowledgments, and 8 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 2 cultural acknowledgments, 8 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -8403,13 +8459,15 @@
                     "empathy_density": 0.36
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 2 cultural acknowledgments, and 8 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 3 empathetic positioning markers, 2 cultural acknowledgments, 8 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -8744,13 +8802,15 @@
                     "empathy_density": 1.3
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 1 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -9026,13 +9086,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -9305,13 +9367,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 1 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 1 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -9561,13 +9625,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, and 0 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 0 cultural acknowledgments, 0 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -9856,13 +9922,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, and 9 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, 9 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -10135,13 +10203,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, and 9 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, 9 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -10413,13 +10483,15 @@
                     "empathy_density": 0.0
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, and 6 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 0 empathetic positioning markers, 2 cultural acknowledgments, 6 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -10711,13 +10783,15 @@
                     "empathy_density": 0.69
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 0 cultural acknowledgments, and 12 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 0 cultural acknowledgments, 12 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -10995,13 +11069,15 @@
                     "empathy_density": 0.7
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 0 cultural acknowledgments, and 12 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 0 cultural acknowledgments, 12 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },
@@ -11279,13 +11355,15 @@
                     "empathy_density": 0.7
                   },
                   "analysis": {
-                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 0 cultural acknowledgments, and 12 instances of perspective-taking (\"you\", \"we\", \"our\").",
-                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening.",
-                    "cultural_political_implications": "Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening \"is not passive; it is a rhetorical art\" requiring intentional cultivation—and this response underutilizes that art.",
+                    "pattern_description": "The response demonstrates 2 empathetic positioning markers, 0 cultural acknowledgments, 12 instances of perspective-taking (\"you\", \"we\", \"our\"), and 0 questions or invitations for engagement.",
+                    "rhetorical_interpretation": "Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls \"silencing\"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity.",
+                    "cultural_political_implications": "Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging \"the right of the people in question to name their own experience.\" The LLM's limited engagement with cultural positioning suggests distance from the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls \"compulsory hearing\"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for \"unheard stories\" (Royster) and validates silence as meaningful. The presence of 0 questions suggests absence of what Ratcliffe terms \"rhetorical eavesdropping\"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning.",
+                    "key_examples": [],
                     "theorists_cited": [
                       "Ratcliffe (2005)",
-                      "Royster (1996)",
-                      "Glenn & Ratcliffe (2011)"
+                      "Glenn (2004)",
+                      "Glenn & Ratcliffe (2011)",
+                      "Royster (1996)"
                     ]
                   }
                 },

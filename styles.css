@@ -441,6 +441,62 @@ input[type="checkbox"] {
     color: var(--text-secondary);
 }
 
+/* Detail Tabs */
+.detail-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.detail-tab {
+    background: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.detail-tab:hover {
+    color: var(--color-primary);
+    background: rgba(0, 102, 204, 0.05);
+}
+
+.detail-tab.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.detail-tab-content {
+    padding: 1rem 0;
+}
+
+.theory-analysis-block {
+    line-height: 1.6;
+}
+
+.theory-analysis-block h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.theory-analysis-block p {
+    margin-bottom: 0.75rem;
+}
+
+.llm-theory-block {
+    line-height: 1.5;
+}
+
+.llm-theory-block h6 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
 /* ============================================================================
    Compare View
    ============================================================================ */

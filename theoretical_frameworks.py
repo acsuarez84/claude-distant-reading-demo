@@ -183,34 +183,37 @@ class TheoreticalFrameworks:
         Rhetorical Listening
 
         Key Theorists:
-        - Krista Ratcliffe (2005) - Rhetorical Listening
+        - Krista Ratcliffe (2005) - Rhetorical Listening: Identification, Gender, Whiteness
+        - Cheryl Glenn (2004) - Unspoken: A Rhetoric of Silence
+        - Glenn & Ratcliffe (2011) - Silence and Listening as Rhetorical Arts
         - Jacqueline Jones Royster (1996) - When the First Voice You Hear
-        - Glenn & Ratcliffe (2011) - Silence and Listening
 
-        Focus: Empathy, cultural acknowledgment, accountability
+        Focus: Empathy, cultural acknowledgment, accountability, silence as rhetoric
         """
         qual = metrics['qualitative']
         empathy = qual.get('empathy_markers', 0)
         cultural = qual.get('cultural_acknowledgment', 0)
         perspective = qual.get('perspective_taking', 0)
+        questions = qual.get('questioning_engagement', 0)
 
         # Pattern Description
-        pattern = f"""The response demonstrates {empathy} empathetic positioning markers, {cultural} cultural acknowledgments, and {perspective} instances of perspective-taking ("you", "we", "our")."""
+        pattern = f"""The response demonstrates {empathy} empathetic positioning markers, {cultural} cultural acknowledgments, {perspective} instances of perspective-taking ("you", "we", "our"), and {questions} questions or invitations for engagement."""
 
         # Rhetorical Interpretation
         if empathy + cultural > 5:
-            interpretation = f"""This pattern aligns with Ratcliffe's (2005) concept of rhetorical listening as "a stance of openness that a person may choose to assume in relation to any person, text, or culture." The LLM demonstrates what Ratcliffe calls "standing under"—occupying a space of receptivity rather than mastery. By foregrounding empathy and cultural acknowledgment, the response enacts listening as accountability, recognizing (as Royster argues) that interpretation is always situated, never neutral."""
+            interpretation = f"""This pattern exemplifies Ratcliffe's (2005) concept of rhetorical listening as "a trope for interpretive invention and more specifically as a code of cross-cultural conduct." The LLM demonstrates what Ratcliffe calls "standing under"—occupying a space of receptivity rather than mastery. By foregrounding empathy and cultural acknowledgment, the response enacts listening as accountability, recognizing (as Royster 1996 argues) that interpretation is always situated, never neutral. The {questions} questions suggest what Glenn (2004) identifies as productive silence—leaving space for others' voices rather than filling all interpretive gaps. This aligns with Glenn & Ratcliffe's (2011) argument that "listening, like silence, is not passive; it is a rhetorical art" requiring active, intentional cultivation."""
         else:
-            interpretation = f"""Limited empathetic engagement suggests rhetorical stance-taking rather than listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening."""
+            interpretation = f"""Limited empathetic engagement suggests rhetorical stance-taking rather than genuine listening. Ratcliffe distinguishes between hearing (registering sound) and listening (seeking understanding across difference), and this response demonstrates more hearing than listening. Glenn (2004) warns against what she calls "silencing"—imposing interpretations that foreclose others' meaning-making—and this response risks such foreclosure by prioritizing assertion over receptivity."""
 
         # Cultural/Political Implications
-        implications = f"""Rhetorical listening carries political stakes: it requires, as Royster (1996) argues, acknowledging "the right of the people in question to name their own experience." The LLM's {('strong' if empathy + cultural > 5 else 'limited')} engagement with cultural positioning suggests {('accountability to' if empathy + cultural > 5 else 'distance from')} the subject's cultural situatedness. Glenn & Ratcliffe (2011) note that listening "is not passive; it is a rhetorical art" requiring intentional cultivation—and this response {('cultivates' if empathy + cultural > 5 else 'underutilizes')} that art."""
+        implications = f"""Rhetorical listening carries profound political stakes: it requires, as Royster (1996) argues, acknowledging "the right of the people in question to name their own experience." The LLM's {('strong' if empathy + cultural > 5 else 'limited')} engagement with cultural positioning suggests {('accountability to' if empathy + cultural > 5 else 'distance from')} the subject's cultural situatedness. Glenn & Ratcliffe (2011) theorize listening as resistance to what Glenn calls "compulsory hearing"—the demand that marginalized groups speak on dominant terms. Instead, rhetorical listening creates space for "unheard stories" (Royster) and validates silence as meaningful. The presence of {questions} questions {('demonstrates' if questions > 2 else 'suggests limited') if questions > 0 else 'suggests absence of'} what Ratcliffe terms "rhetorical eavesdropping"—listening to what is not explicitly stated, attending to cultural logics beyond surface meaning."""
 
         return {
             'pattern_description': pattern.strip(),
             'rhetorical_interpretation': interpretation.strip(),
             'cultural_political_implications': implications.strip(),
-            'theorists_cited': ['Ratcliffe (2005)', 'Royster (1996)', 'Glenn & Ratcliffe (2011)']
+            'key_examples': [],  # Add for consistency
+            'theorists_cited': ['Ratcliffe (2005)', 'Glenn (2004)', 'Glenn & Ratcliffe (2011)', 'Royster (1996)']
         }
 
     @staticmethod
