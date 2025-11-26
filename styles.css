@@ -1,0 +1,731 @@
+/* ============================================================================
+   Distant Reading Visualization Styles
+   - Responsive design (desktop, tablet, mobile)
+   - High contrast for readability
+   - 1 inch margins, 20px base font
+   ============================================================================ */
+
+/* ============================================================================
+   CSS Variables & Theme
+   ============================================================================ */
+:root {
+    /* Colors - High Contrast */
+    --bg-primary: #FEFEFE;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4A4A;
+
+    --color-primary: #0066CC;
+    --color-secondary: #FF6B35;
+    --color-accent: #D4A017;
+
+    --color-success: #2D7D2D;
+    --color-warning: #CC0000;
+    --color-neutral: #6C757D;
+
+    /* Semantic colors */
+    --color-poe: #9B59B6;
+    --color-chatgpt: #16A085;
+    --color-claude: #E74C3C;
+
+    /* Node colors */
+    --node-llm: #0066CC;
+    --node-theory: #2D7D2D;
+    --node-theme: #D4A017;
+
+    /* Edge colors */
+    --edge-alignment: #2D7D2D;
+    --edge-shared-theme: #0066CC;
+    --edge-sentiment: #9B59B6;
+    --edge-tension: #CC0000;
+
+    /* Spacing */
+    --margin-container: 6.25%; /* ~1 inch on standard screens */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+
+    /* Typography */
+    --font-base: 20px;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --line-height: 1.6;
+}
+
+/* ============================================================================
+   Base Styles
+   ============================================================================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-base);
+    line-height: var(--line-height);
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin-left: var(--margin-container);
+    margin-right: var(--margin-container);
+    width: calc(100% - 2 * var(--margin-container));
+}
+
+/* ============================================================================
+   Header
+   ============================================================================ */
+.site-header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-lg) 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* ============================================================================
+   Navigation
+   ============================================================================ */
+.main-nav {
+    background-color: var(--text-primary);
+    padding: var(--spacing-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-nav .container {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+.nav-btn.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* ============================================================================
+   Main Content
+   ============================================================================ */
+main {
+    flex: 1;
+    padding: var(--spacing-lg) 0;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+/* ============================================================================
+   Controls & Form Elements
+   ============================================================================ */
+.controls,
+.compare-controls {
+    background-color: #F5F5F5;
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.control-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.control-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #D0D0D0;
+    border-radius: 4px;
+    background-color: white;
+    color: var(--text-primary);
+    transition: border-color 0.3s ease;
+}
+
+select:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkbox-group label,
+.wordcloud-filters label,
+.edge-filters label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* ============================================================================
+   Text View
+   ============================================================================ */
+.text-display {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+#text-content {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    min-height: 400px;
+    line-height: 1.8;
+}
+
+#text-content .code-switch {
+    background-color: rgba(212, 160, 23, 0.2);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+#text-content .theoretical-marker {
+    cursor: pointer;
+    border-bottom: 2px dotted var(--color-primary);
+    position: relative;
+}
+
+#text-content .theoretical-marker:hover {
+    background-color: rgba(0, 102, 204, 0.1);
+}
+
+.metrics-panel {
+    background-color: #F9F9F9;
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    border: 2px solid #E0E0E0;
+}
+
+.metrics-panel h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.metric-item {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.metric-item:last-child {
+    border-bottom: none;
+}
+
+.metric-label {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.metric-value {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* ============================================================================
+   Word Clouds View
+   ============================================================================ */
+.wordcloud-tabs {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.tab-btn:hover {
+    background-color: #E0E0E0;
+}
+
+.tab-btn.active {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.wordcloud-filters {
+    background-color: #F5F5F5;
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+#wordcloud-container {
+    background-color: white;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    height: 600px;
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+}
+
+.wordcloud-details {
+    background-color: #F9F9F9;
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    border: 2px solid #E0E0E0;
+}
+
+/* ============================================================================
+   Concept Map View
+   ============================================================================ */
+.map-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.legend,
+.edge-filters {
+    background-color: #F5F5F5;
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    border: 2px solid #E0E0E0;
+}
+
+.legend h3,
+.edge-filters h3 {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.node-sample {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid var(--text-primary);
+}
+
+.node-sample.llm-node {
+    background-color: var(--node-llm);
+}
+
+.node-sample.theory-node {
+    background-color: var(--node-theory);
+}
+
+.node-sample.theme-node {
+    background-color: var(--node-theme);
+}
+
+.edge-sample {
+    width: 60px;
+    height: 4px;
+    display: inline-block;
+}
+
+.edge-sample.alignment {
+    background-color: var(--edge-alignment);
+}
+
+.edge-sample.shared-theme {
+    background-color: var(--edge-shared-theme);
+}
+
+.edge-sample.tension {
+    background-color: var(--edge-tension);
+}
+
+#concept-map-container {
+    background-color: white;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    height: 800px;
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+}
+
+#concept-map-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+.details-panel {
+    background-color: #F9F9F9;
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    border: 2px solid #E0E0E0;
+    min-height: 200px;
+}
+
+.details-panel h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+}
+
+/* ============================================================================
+   Compare View
+   ============================================================================ */
+.comparison-panels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.comparison-panel {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+.comparison-panel h2 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+}
+
+.side-by-side {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.llm-text-panel {
+    background-color: #F9F9F9;
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    border-left: 4px solid var(--color-primary);
+}
+
+.llm-text-panel h3 {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+}
+
+.llm-text-panel.poe {
+    border-left-color: var(--color-poe);
+}
+
+.llm-text-panel.chatgpt {
+    border-left-color: var(--color-chatgpt);
+}
+
+.llm-text-panel.claude {
+    border-left-color: var(--color-claude);
+}
+
+.text-diff {
+    background-color: rgba(255, 107, 53, 0.2);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.chart-controls {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.chart-type-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #F0F0F0;
+    border: 2px solid #D0D0D0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.chart-type-btn:hover {
+    background-color: #E0E0E0;
+}
+
+.chart-type-btn.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+#comparison-chart {
+    max-width: 100%;
+    height: 400px;
+}
+
+#differences-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.difference-item {
+    background-color: #F9F9F9;
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    border-left: 4px solid var(--color-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.difference-item:hover {
+    background-color: #F0F0F0;
+    transform: translateX(5px);
+}
+
+.difference-item h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.difference-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* ============================================================================
+   Footer
+   ============================================================================ */
+.site-footer {
+    background-color: var(--text-primary);
+    color: white;
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* ============================================================================
+   Tooltips
+   ============================================================================ */
+.tooltip {
+    position: absolute;
+    background-color: rgba(26, 26, 26, 0.95);
+    color: white;
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 1000;
+    max-width: 300px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ============================================================================
+   Responsive Design - Tablet
+   ============================================================================ */
+@media (max-width: 1024px) {
+    :root {
+        --margin-container: 5%;
+    }
+
+    .container {
+        width: calc(100% - 2 * var(--margin-container));
+    }
+
+    #concept-map-container {
+        height: 600px;
+    }
+
+    .text-display {
+        grid-template-columns: 1fr;
+    }
+
+    .map-controls {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================================
+   Responsive Design - Mobile
+   ============================================================================ */
+@media (max-width: 768px) {
+    :root {
+        --font-base: 18px;
+        --margin-container: 3%;
+    }
+
+    .site-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .main-nav .container {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+
+    .controls,
+    .compare-controls {
+        flex-direction: column;
+    }
+
+    .control-group {
+        width: 100%;
+    }
+
+    #concept-map-container {
+        height: 500px;
+    }
+
+    .side-by-side {
+        grid-template-columns: 1fr;
+    }
+
+    .wordcloud-filters {
+        flex-direction: column;
+    }
+
+    .comparison-panel h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ============================================================================
+   Utility Classes
+   ============================================================================ */
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-md {
+    margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Loading state */
+.loading {
+    text-align: center;
+    padding: var(--spacing-lg);
+    color: var(--text-secondary);
+}
+
+.loading::after {
+    content: '...';
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F0F0F0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BDBDBD;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9E9E9E;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+select:focus,
+input:focus {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}

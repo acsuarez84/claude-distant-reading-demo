@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"="width=device-width, initial-scale=1.0">
+    <title>Distant Reading: LLM Rhetorical Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- D3.js for concept map -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Chart.js for metrics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <!-- WordCloud2.js -->
+    <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.2/src/wordcloud2.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <h1>Distant Reading Analysis</h1>
+            <p class="subtitle">Context, Abstraction, and Concept in Latino Women Rhetorics</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav-btn active" data-view="text">Text Navigation</button>
+            <button class="nav-btn" data-view="wordclouds">Word Clouds</button>
+            <button class="nav-btn" data-view="conceptmap">Concept Map</button>
+            <button class="nav-btn" data-view="compare">Compare LLMs</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- View: Text Navigation -->
+        <section id="text-view" class="view active">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="llm-select">Select LLM:</label>
+                    <select id="llm-select">
+                        <option value="poe_chatbot">Poe.com Chatbot</option>
+                        <option value="chatgpt">ChatGPT</option>
+                        <option value="claude_ai">Claude.AI</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="segment-select">Select Image:</label>
+                    <select id="segment-select"></select>
+                </div>
+                <div class="control-group">
+                    <label for="parameter-select">Select Parameter:</label>
+                    <select id="parameter-select">
+                        <option value="full">Full Response</option>
+                        <option value="context">Context</option>
+                        <option value="abstraction">Abstraction</option>
+                        <option value="concept">Concept</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="text-display">
+                <div id="text-content"></div>
+                <div id="text-metrics" class="metrics-panel"></div>
+            </div>
+        </section>
+
+        <!-- View: Word Clouds -->
+        <section id="wordclouds-view" class="view">
+            <div class="wordcloud-tabs">
+                <button class="tab-btn active" data-param="context">Context</button>
+                <button class="tab-btn" data-param="abstraction">Abstraction</button>
+                <button class="tab-btn" data-param="concept">Concept</button>
+            </div>
+
+            <div class="wordcloud-filters">
+                <label>
+                    <input type="checkbox" id="filter-poe" value="poe_chatbot" checked> Poe.com Chatbot
+                </label>
+                <label>
+                    <input type="checkbox" id="filter-chatgpt" value="chatgpt" checked> ChatGPT
+                </label>
+                <label>
+                    <input type="checkbox" id="filter-claude" value="claude_ai" checked> Claude.AI
+                </label>
+            </div>
+
+            <div id="wordcloud-container"></div>
+            <div id="wordcloud-details" class="details-panel"></div>
+        </section>
+
+        <!-- View: Concept Map -->
+        <section id="conceptmap-view" class="view">
+            <div class="map-controls">
+                <div class="legend">
+                    <h3>Legend</h3>
+                    <div class="legend-item">
+                        <span class="node-sample llm-node"></span> LLM Nodes
+                    </div>
+                    <div class="legend-item">
+                        <span class="node-sample theory-node"></span> Theory Nodes
+                    </div>
+                    <div class="legend-item">
+                        <span class="node-sample theme-node"></span> Theme Nodes
+                    </div>
+                    <div class="legend-item">
+                        <span class="edge-sample alignment"></span> Alignment
+                    </div>
+                    <div class="legend-item">
+                        <span class="edge-sample shared-theme"></span> Shared Themes
+                    </div>
+                    <div class="legend-item">
+                        <span class="edge-sample tension"></span> Tensions/Contradictions
+                    </div>
+                </div>
+
+                <div class="edge-filters">
+                    <h3>Filter Connections</h3>
+                    <label>
+                        <input type="checkbox" class="edge-filter" value="alignment" checked> Alignment
+                    </label>
+                    <label>
+                        <input type="checkbox" class="edge-filter" value="shared-theme" checked> Shared Themes
+                    </label>
+                    <label>
+                        <input type="checkbox" class="edge-filter" value="sentiment" checked> Sentiment
+                    </label>
+                    <label>
+                        <input type="checkbox" class="edge-filter" value="tension" checked> Tensions
+                    </label>
+                </div>
+            </div>
+
+            <div id="concept-map-container"></div>
+            <div id="concept-map-details" class="details-panel"></div>
+        </section>
+
+        <!-- View: Compare LLMs -->
+        <section id="compare-view" class="view">
+            <div class="compare-controls">
+                <div class="control-group">
+                    <label>Select LLMs to Compare:</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" class="compare-llm" value="poe_chatbot" checked> Poe.com Chatbot
+                        </label>
+                        <label>
+                            <input type="checkbox" class="compare-llm" value="chatgpt" checked> ChatGPT
+                        </label>
+                        <label>
+                            <input type="checkbox" class="compare-llm" value="claude_ai"> Claude.AI
+                        </label>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="compare-theory">Filter by Theory:</label>
+                    <select id="compare-theory">
+                        <option value="all">All Theories</option>
+                        <option value="srtol">Students' Rights to Their Own Language</option>
+                        <option value="multiliteracies">Multiliteracies</option>
+                        <option value="multimodality">Multimodality</option>
+                        <option value="rhetorical_listening">Rhetorical Listening</option>
+                        <option value="code_meshing">Code-Meshing</option>
+                        <option value="big_data">Big Data</option>
+                        <option value="composing_with_ai">Composing with AI</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="compare-parameter">Parameter:</label>
+                    <select id="compare-parameter">
+                        <option value="all">All Parameters</option>
+                        <option value="context">Context</option>
+                        <option value="abstraction">Abstraction</option>
+                        <option value="concept">Concept</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="comparison-panels">
+                <!-- Panel A: Side-by-Side Text -->
+                <div class="comparison-panel text-comparison">
+                    <h2>Side-by-Side Text Comparison</h2>
+                    <div id="text-comparison-container" class="side-by-side"></div>
+                </div>
+
+                <!-- Panel B: Metric Comparison -->
+                <div class="comparison-panel metric-comparison">
+                    <h2>Metric Comparison</h2>
+                    <div class="chart-controls">
+                        <button class="chart-type-btn active" data-chart="radar">Radar Chart</button>
+                        <button class="chart-type-btn" data-chart="bar">Bar Chart</button>
+                        <button class="chart-type-btn" data-chart="line">Line Chart</button>
+                    </div>
+                    <canvas id="comparison-chart"></canvas>
+                </div>
+
+                <!-- Panel C: Highlighted Differences -->
+                <div class="comparison-panel differences">
+                    <h2>Key Differentiators</h2>
+                    <div id="differences-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>ENC 5930: Distant Reading Analysis | Context, Abstraction, and Concept Interpretation of LLMs</p>
+        </div>
+    </footer>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
