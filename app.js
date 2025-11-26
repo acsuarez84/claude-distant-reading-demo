@@ -728,21 +728,37 @@ function showNodeDetails(node) {
             <p><strong>Total Words:</strong> ${llmData.overall_stats.total_words}</p>
             <p><strong>Average Sentiment:</strong> ${llmData.sentiment.average_polarity.toFixed(2)} (${llmData.sentiment.overall_emotion})</p>
 
-            <h4 style="margin-top: 1rem;">Theoretical Alignment</h4>
-            ${Object.entries(llmData.theoretical_analysis || {}).map(([theory, scores]) => `
-                <div class="metric-item">
-                    <div class="metric-label">${theory}</div>
-                    <div class="metric-value">
-                        Consistency: ${scores.avg_consistency.toFixed(2)} |
-                        Alignment: ${scores.avg_alignment.toFixed(2)}
+            <div class="detail-tabs" style="margin-top: 1rem;">
+                <button class="detail-tab active" onclick="showDetailTab(event, 'scores-${node.id}')">Scores</button>
+                <button class="detail-tab" onclick="showDetailTab(event, 'analysis-${node.id}')">Detailed Analysis</button>
+            </div>
+
+            <div id="scores-${node.id}" class="detail-tab-content active">
+                <h4>Theoretical Alignment Scores</h4>
+                ${Object.entries(llmData.theoretical_analysis || {}).map(([theory, scores]) => `
+                    <div class="metric-item">
+                        <div class="metric-label">${theory}</div>
+                        <div class="metric-value">
+                            Consistency: ${scores.avg_consistency.toFixed(2)} |
+                            Alignment: ${scores.avg_alignment.toFixed(2)}
+                        </div>
                     </div>
+                `).join('')}
+            </div>
+
+            <div id="analysis-${node.id}" class="detail-tab-content" style="display: none;">
+                <div style="max-height: 500px; overflow-y: auto;">
+                    ${generateLLMAnalysisSummary(llmData)}
                 </div>
-            `).join('')}
+            </div>
         `;
     } else if (node.type === 'theory') {
         content += `
             <p><strong>Type:</strong> Theoretical Framework</p>
             <p><strong>Key:</strong> ${node.theoryKey}</p>
+            <div style="margin-top: 1rem;">
+                ${generateTheoryAnalysisSummary(node.theoryKey)}
+            </div>
         `;
     } else if (node.type === 'theme') {
         content += `
@@ -752,6 +768,96 @@ function showNodeDetails(node) {
     }
 
     detailsPanel.innerHTML = content;
+}
+
+function showDetailTab(event, tabId) {
+    // Get all tabs and content in the clicked tab's container
+    const button = event.target;
+    const container = button.closest('.detail-tabs').parentElement;
+
+    // Hide all tab content
+    const tabContents = container.querySelectorAll('.detail-tab-content');
+    tabContents.forEach(tc => tc.style.display = 'none');
+
+    // Remove active class from all tabs
+    const tabs = container.querySelectorAll('.detail-tab');
+    tabs.forEach(t => t.classList.remove('active'));
+
+    // Show selected tab and mark button active
+    document.getElementById(tabId).style.display = 'block';
+    button.classList.add('active');
+}
+
+function generateLLMAnalysisSummary(llmData) {
+    // Get first response as sample for detailed analysis
+    if (!llmData.image_responses || llmData.image_responses.length === 0) {
+        return '<p>No analysis available</p>';
+    }
+
+    const firstResponse = llmData.image_responses[0];
+    const paramData = firstResponse.parameters.context || firstResponse.parameters.abstraction || firstResponse.parameters.concept;
+
+    if (!paramData || !paramData.theoretical_analysis) {
+        return '<p>No theoretical analysis available</p>';
+    }
+
+    let html = '<p style="font-size: 0.9em; color: #666; margin-bottom: 1rem;">Sample analysis from first response (Context parameter):</p>';
+
+    Object.entries(paramData.theoretical_analysis).forEach(([theory, data]) => {
+        if (data.analysis) {
+            const theoryName = theory.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            html += `
+                <div class="theory-analysis-block" style="margin-bottom: 1.5rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid #0066CC;">
+                    <h5 style="margin-top: 0; color: #0066CC;">${theoryName}</h5>
+
+                    <p><strong>Pattern Description:</strong><br>
+                    ${data.analysis.pattern_description}</p>
+
+                    <p><strong>Rhetorical Interpretation:</strong><br>
+                    ${data.analysis.rhetorical_interpretation}</p>
+
+                    <p><strong>Cultural/Political Implications:</strong><br>
+                    ${data.analysis.cultural_political_implications}</p>
+
+                    ${data.analysis.key_examples && data.analysis.key_examples.length > 0 ? `
+                        <p><strong>Examples:</strong><br>
+                        ${data.analysis.key_examples.map(ex => `• ${ex}`).join('<br>')}</p>
+                    ` : ''}
+
+                    <p style="font-size: 0.85em; color: #666;"><strong>Theorists:</strong> ${data.analysis.theorists_cited.join(', ')}</p>
+                </div>
+            `;
+        }
+    });
+
+    return html;
+}
+
+function generateTheoryAnalysisSummary(theoryKey) {
+    // Show how this theory is applied across all LLMs
+    let html = '<p style="font-size: 0.9em; color: #666;">How this theory manifests across LLMs:</p>';
+
+    Object.entries(window.analysisData.llms).forEach(([llmName, llmData]) => {
+        if (llmData.image_responses && llmData.image_responses.length > 0) {
+            const firstResponse = llmData.image_responses[0];
+            const paramData = firstResponse.parameters.context;
+
+            if (paramData && paramData.theoretical_analysis && paramData.theoretical_analysis[theoryKey]) {
+                const analysis = paramData.theoretical_analysis[theoryKey].analysis;
+                if (analysis) {
+                    html += `
+                        <div class="llm-theory-block" style="margin-bottom: 1rem; padding: 0.75rem; background: #f8f9fa; border-left: 3px solid #28a745;">
+                            <h6 style="margin-top: 0; color: #28a745;">${llmName.replace(/_/g, ' ').toUpperCase()}</h6>
+                            <p style="font-size: 0.9em;">${analysis.pattern_description}</p>
+                            <p style="font-size: 0.85em; color: #666; font-style: italic;">${analysis.rhetorical_interpretation.substring(0, 200)}...</p>
+                        </div>
+                    `;
+                }
+            }
+        }
+    });
+
+    return html;
 }
 
 function showTooltip(event, d) {
