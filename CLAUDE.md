@@ -19,12 +19,14 @@ The system performs distant reading analysis using 7 theoretical frameworks and 
 
 ```bash
 # Full pipeline (from Word doc to analysis results)
-python3 extract_document.py      # Extract text from Word document
-python3 detailed_parser.py       # Parse into structured segments
-python3 analysis_engine.py       # Run comprehensive analysis
+python3 extract_document.py           # Extract text from Word document
+python3 detailed_parser.py            # Parse into structured segments
+python3 analysis_engine.py            # Run comprehensive analysis (generates analysis_results.json)
+python3 generate_markdown_reports.py  # Generate human-readable markdown reports (optional)
 
 # Quick re-run (if structured_data.json exists)
-python3 analysis_engine.py       # Only regenerate analysis_results.json
+python3 analysis_engine.py            # Only regenerate analysis_results.json
+python3 generate_markdown_reports.py  # Only regenerate markdown reports
 ```
 
 ### Viewing the Visualization
@@ -63,18 +65,18 @@ Structured JSON (structured_data.json)
     - LLM responses (poe_chatbot, chatgpt, claude_ai)
     - Parameters (context, abstraction, concept)
     ↓ analysis_engine.py
-Complete Analysis (analysis_results.json - 382KB)
+Complete Analysis (analysis_results.json - 602KB)
     - Theme extraction
     - Sentiment analysis (multilingual)
     - Semantic style analysis
-    - 7 theoretical framework scores
-    ↓ app.js loads
-Interactive Visualization (index.html)
+    - 7 theoretical framework scores + detailed analysis
+    ↓ app.js loads / generate_markdown_reports.py
+Interactive Visualization (index.html) + Markdown Reports
 ```
 
 ### Analysis Engine Architecture
 
-The `analysis_engine.py` contains five major analyzers:
+The `analysis_engine.py` contains five major analyzers, with theoretical analysis templates in `theoretical_frameworks.py`:
 
 1. **MultilingualPreprocessor**
    - Tokenizes English and Spanish text
@@ -89,23 +91,38 @@ The `analysis_engine.py` contains five major analyzers:
 
 3. **TheoreticalAnalyzer**
    - 7 analysis methods (one per framework):
-     - `analyze_srtol()` - Students' Rights to Their Own Language
-     - `analyze_multiliteracies()` - Multiple meaning-making modes
-     - `analyze_multimodality()` - Visual-textual relationships
-     - `analyze_rhetorical_listening()` - Empathy and cultural positioning
-     - `analyze_code_meshing()` - Spanish-English integration patterns
-     - `analyze_big_data()` - Pattern recognition and abstraction
-     - `analyze_composing_with_ai()` - Self-referential positioning
+     - `analyze_srtol()` - Students' Rights to Their Own Language (CCCC 1974, Smitherman 1977, Young 2009-2011)
+     - `analyze_multiliteracies()` - Multiple meaning-making modes (New London Group 1996, Cope & Kalantzis)
+     - `analyze_multimodality()` - Visual-textual relationships (Kress & van Leeuwen 1996-2006, Shipka 2011)
+     - `analyze_rhetorical_listening()` - Empathy and cultural positioning (Ratcliffe 2005, Glenn 2004, Glenn & Ratcliffe 2011)
+     - `analyze_code_meshing()` - Spanish-English integration patterns (Canagarajah 2006-2013, Young 2004-2011)
+     - `analyze_big_data()` - Pattern recognition and abstraction (Moretti 2005-2013, Hayles 2012)
+     - `analyze_composing_with_ai()` - Self-referential positioning (Vee 2017, Hayles 2005-2012, Boyle 2018)
    - Each returns:
      - `qualitative`: Observations, counts, categorizations
-     - `quantitative`: Consistency score (0-1), alignment score (0-1)
+     - `quantitative`: Consistency score (0-1), alignment score (0-1), marker_words list
+     - `analysis`: Pattern description, rhetorical interpretation, cultural/political implications, key examples, theorists cited
 
-4. **SentimentAnalyzer**
+4. **TheoreticalFrameworks** (`theoretical_frameworks.py`)
+   - Pre-written analysis templates grounded in academic theory
+   - Each framework generates:
+     - `pattern_description`: What the data shows
+     - `rhetorical_interpretation`: What it means for meaning-making (with direct quotes from theorists)
+     - `cultural_political_implications`: What ideological work it does
+     - `key_examples`: Textual evidence from the response
+     - `theorists_cited`: List of key scholars cited
+   - Example concepts integrated:
+     - Glenn's "productive silence" vs "silencing"
+     - Ratcliffe's "standing under" and "rhetorical eavesdropping"
+     - Young's "code-meshing" vs "code-switching"
+     - Smitherman's "linguistic push-pull"
+
+5. **SentimentAnalyzer**
    - Simple word-based sentiment (positive/negative/neutral word lists)
    - Calculates polarity (-1 to 1), subjectivity (0 to 1), emotion label
    - Runs at three levels: overall, per-image, per-parameter
 
-5. **SemanticStyleAnalyzer**
+6. **SemanticStyleAnalyzer**
    - Cultural markers (Spanish terms, gestures, references)
    - Sentence complexity (avg length, max/min)
    - Word choices (emotional vs neutral, concrete vs abstract)
@@ -138,7 +155,10 @@ The `analysis_engine.py` contains five major analyzers:
    - Three node types: LLMs (blue), theories (green), themes (gold)
    - Four edge types: alignment, shared-theme, sentiment, tension
    - Drag handler keeps nodes fixed after dragging
-   - Click node → detailed panel, hover → tooltip
+   - Click node → detailed panel with tabs:
+     - **Scores tab**: Consistency/alignment metrics
+     - **Detailed Analysis tab**: Full theoretical analysis (pattern description, rhetorical interpretation, cultural/political implications, examples, theorists)
+   - Hover → tooltip
 
 4. **Compare LLMs** (`#compare-view`)
    - Three panels: text comparison, Chart.js charts, differences list
@@ -168,7 +188,17 @@ The `analysis_engine.py` contains five major analyzers:
               "sentiment": { ... },
               "semantic_style": { ... },
               "theoretical_analysis": {
-                "srtol": { qualitative, quantitative },
+                "srtol": {
+                  qualitative,
+                  quantitative,
+                  analysis: {
+                    pattern_description,
+                    rhetorical_interpretation,
+                    cultural_political_implications,
+                    key_examples,
+                    theorists_cited
+                  }
+                },
                 // ... 6 more theories
               }
             },
@@ -221,24 +251,70 @@ The `analysis_engine.py` contains five major analyzers:
 
 ### Adding a New Theoretical Framework
 
-1. Add analyzer method to `TheoreticalAnalyzer` class:
+1. Add analysis template to `TheoreticalFrameworks` class in `theoretical_frameworks.py`:
+   ```python
+   @staticmethod
+   def new_framework_analysis(metrics: Dict[str, Any], text: str) -> Dict[str, Any]:
+       """
+       New Framework
+
+       Key Theorists:
+       - Author (Year) - Work Title
+
+       Focus: What this framework analyzes
+       """
+       qual = metrics['qualitative']
+       # Extract relevant metrics
+
+       # Pattern Description
+       pattern = f"""The response demonstrates..."""
+
+       # Rhetorical Interpretation (cite theorists)
+       interpretation = f"""This aligns with Author's (Year) concept of..."""
+
+       # Cultural/Political Implications
+       implications = f"""The political stakes are..."""
+
+       return {
+           'pattern_description': pattern.strip(),
+           'rhetorical_interpretation': interpretation.strip(),
+           'cultural_political_implications': implications.strip(),
+           'key_examples': [],
+           'theorists_cited': ['Author (Year)']
+       }
+   ```
+
+2. Add analyzer method to `TheoreticalAnalyzer` class in `analysis_engine.py`:
    ```python
    def analyze_new_framework(self, text: str) -> Dict[str, Any]:
        # Count relevant markers
        markers = len(re.findall(r'pattern', text))
+       marker_words = [...]  # Extract specific words
+
        consistency = min(1.0, markers / threshold)
        alignment = calculate_alignment(text)
 
+       qualitative = { /* observations */ }
+       quantitative = {
+           'consistency_score': round(consistency, 3),
+           'alignment_score': round(alignment, 3),
+           'marker_words': marker_words
+       }
+
+       # Generate theoretical analysis
+       analysis = self.frameworks.new_framework_analysis(
+           metrics={'qualitative': qualitative, 'quantitative': quantitative},
+           text=text
+       )
+
        return {
-           'qualitative': { /* observations */ },
-           'quantitative': {
-               'consistency_score': round(consistency, 3),
-               'alignment_score': round(alignment, 3)
-           }
+           'qualitative': qualitative,
+           'quantitative': quantitative,
+           'analysis': analysis
        }
    ```
 
-2. Call it in `main()` within the theories dict:
+3. Call it in `main()` within the theories dict:
    ```python
    theories = {
        'srtol': theoretical_analyzer.analyze_srtol(param_text),
@@ -247,7 +323,7 @@ The `analysis_engine.py` contains five major analyzers:
    }
    ```
 
-3. Add to visualization comparison options in `index.html`:
+4. Add to visualization comparison options in `index.html`:
    ```html
    <option value="new_framework">New Framework</option>
    ```
@@ -306,9 +382,17 @@ No automated tests exist. Manual testing workflow:
    # Check structured_data.json has all segments
    ```
 
+## Output Files
+
+The analysis pipeline generates multiple output files:
+
+1. **analysis_results.json (602KB)**: Complete machine-readable analysis with theoretical interpretations
+2. **analysis_summary.md (~30KB)**: Human-readable detailed analysis for each LLM with sample theoretical interpretations
+3. **comparative_analysis.md (~10KB)**: Cross-LLM comparison organized by theoretical framework
+
 ## Performance Considerations
 
-- `analysis_results.json` is 382KB - loads quickly
+- `analysis_results.json` is 602KB - loads quickly
 - Word cloud rendering can lag with >100 words - limited to top 50
 - Concept map force simulation starts hot (alpha 1.0) for fast initial layout
 - D3 drag keeps nodes fixed (fx/fy set) to prevent re-simulation overhead
