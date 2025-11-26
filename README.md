@@ -47,6 +47,9 @@ python3 detailed_parser.py
 
 # Run comprehensive analysis (generates analysis_results.json)
 python3 analysis_engine.py
+
+# Generate human-readable markdown reports (optional)
+python3 generate_markdown_reports.py
 ```
 
 ### 2. View the Visualization
@@ -80,7 +83,9 @@ Or use any other local web server (Live Server extension in VS Code, etc.)
 │   ├── full_text.txt             # Extracted plain text
 │   ├── segments_parsed.json      # Initial segments
 │   ├── structured_data.json      # Parsed LLM responses
-│   └── analysis_results.json     # Complete analysis (382KB)
+│   ├── analysis_results.json     # Complete analysis (602KB)
+│   ├── analysis_summary.md       # Human-readable detailed analysis
+│   └── comparative_analysis.md   # Cross-LLM theoretical comparison
 │
 └── Visualization
     ├── index.html                # Main page
