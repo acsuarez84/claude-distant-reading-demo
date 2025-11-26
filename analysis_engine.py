@@ -9,14 +9,16 @@ import re
 from typing import List, Dict, Any, Tuple
 from collections import Counter, defaultdict
 import string
+from theoretical_frameworks import TheoreticalFrameworks
 
 
 class MultilingualPreprocessor:
     """Handles multilingual text preprocessing."""
 
     def __init__(self):
-        # English stopwords
+        # AGGRESSIVE English stopwords (expanded NLTK list)
         self.english_stopwords = set([
+            # Core stopwords
             'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
             'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'were', 'been',
             'be', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would',
@@ -25,7 +27,42 @@ class MultilingualPreprocessor:
             'what', 'which', 'who', 'when', 'where', 'why', 'how', 'all', 'each',
             'every', 'both', 'few', 'more', 'most', 'other', 'some', 'such',
             'no', 'nor', 'not', 'only', 'own', 'same', 'so', 'than', 'too',
-            'very', 'just', 'about', 'also', 'even', 'here', 'there', 'into'
+            'very', 'just', 'about', 'also', 'even', 'here', 'there', 'into',
+            # Additional common words
+            'their', 'them', 'then', 'now', 'if', 'its', 'during', 'before',
+            'after', 'above', 'below', 'between', 'through', 'under', 'again',
+            'further', 'once', 'because', 'while', 'being', 'having', 'doing',
+            'against', 'up', 'down', 'out', 'off', 'over', 'any', 'our', 'ours',
+            'your', 'yours', 'his', 'hers', 'its', 'theirs', 'whom', 'whose',
+            'whether', 'either', 'neither', 'nor', 'both', 'another', 'however',
+            'therefore', 'thus', 'hence', 'moreover', 'furthermore', 'nevertheless',
+            'nonetheless', 'meanwhile', 'elsewhere', 'somehow', 'somewhere',
+            'anyway', 'anyhow', 'anyone', 'anything', 'anywhere', 'everyone',
+            'everything', 'everywhere', 'someone', 'something', 'somewhere',
+            'nobody', 'nothing', 'nowhere', 'whoever', 'whatever', 'whichever',
+            # Problematic words
+            're', 'said', 'say', 'says', 'saying', 'get', 'gets', 'getting',
+            'got', 'gotten', 'go', 'goes', 'going', 'went', 'gone', 'come',
+            'comes', 'coming', 'came', 'make', 'makes', 'making', 'made',
+            'take', 'takes', 'taking', 'took', 'taken', 'give', 'gives',
+            'giving', 'gave', 'given', 'become', 'becomes', 'becoming', 'became',
+            # Vague qualifiers
+            'quite', 'rather', 'pretty', 'fairly', 'really', 'truly', 'actually',
+            'basically', 'literally', 'certainly', 'clearly', 'obviously',
+            'definitely', 'probably', 'possibly', 'perhaps', 'maybe', 'sometimes',
+            'often', 'usually', 'generally', 'typically', 'normally', 'commonly',
+            # Meta-descriptive words (CRITICAL - filter these out)
+            'image', 'picture', 'photo', 'photograph', 'photography', 'visual',
+            'scene', 'view', 'context', 'abstraction', 'concept', 'framework',
+            'parameter', 'parameters', 'description', 'described', 'describes',
+            'depicting', 'depicts', 'shown', 'shows', 'showing', 'seen', 'sees',
+            'seeing', 'appears', 'appear', 'appearing', 'looks', 'looking',
+            'seems', 'seeming', 'suggests', 'suggesting', 'indicates', 'indicating',
+            'represents', 'representing', 'captures', 'capturing', 'presents',
+            'presenting', 'displays', 'displaying', 'illustrates', 'illustrating',
+            'features', 'featuring', 'contains', 'containing', 'includes',
+            'including', 'depicts', 'depicted', 'portrays', 'portraying',
+            'conveys', 'conveying'
         ])
 
         # Spanish stopwords
@@ -39,15 +76,18 @@ class MultilingualPreprocessor:
             'dos', 'querer', 'entre', 'así', 'primero', 'desde', 'grande', 'eso',
             'ni', 'nos', 'llegar', 'pasar', 'tiempo', 'ella', 'sí', 'día', 'uno',
             'bien', 'poco', 'deber', 'entonces', 'poner', 'cosa', 'tanto', 'hombre',
-            'parecer', 'nuestro', 'tan', 'donde', 'ahora', 'parte', 'después', 'vida'
+            'parecer', 'nuestro', 'tan', 'donde', 'ahora', 'parte', 'después', 'vida',
+            # Additional Spanish stopwords
+            'está', 'están', 'estaba', 'estaban', 'sea', 'sean', 'fue', 'fueron',
+            'tiene', 'tienen', 'tenía', 'tenían', 'había', 'habían', 'hace',
+            'hacen', 'hacía', 'hacían', 'va', 'van', 'iba', 'iban'
         ])
 
         # Culturally significant terms to preserve (Spanish)
         self.cultural_preserve = set([
-            'mija', 'aquí', 'verdad', 'pero', 'sí', 'cómo', 'qué', 'océano',
-            'cielo', 'mar', 'entiendes', 'ves', 'esta', 'ese', 'eso', 'todo',
-            'tanto', 'también', 'mira', 'okay', 'ay', 'gestures', 'leans',
-            'touches', 'snaps', 'nods', 'pauses'
+            'mija', 'aquí', 'verdad', 'sí', 'cómo', 'qué', 'océano',
+            'cielo', 'mar', 'entiendes', 'ves', 'mira', 'ay', 'gestures', 'leans',
+            'touches', 'snaps', 'nods', 'pauses', 'allá', 'acá'
         ])
 
     def detect_code_switching(self, text: str) -> List[Dict[str, Any]]:
@@ -122,6 +162,7 @@ class TheoreticalAnalyzer:
 
     def __init__(self, preprocessor: MultilingualPreprocessor):
         self.preprocessor = preprocessor
+        self.frameworks = TheoreticalFrameworks()
 
     def analyze_srtol(self, text: str) -> Dict[str, Any]:
         """Students' Rights to Their Own Language analysis."""
@@ -145,6 +186,9 @@ class TheoreticalAnalyzer:
             re.IGNORECASE
         ))
 
+        # Extract marker words
+        marker_words = [s['text'] for s in code_switches]
+
         # Calculate scores
         code_switch_ratio = spanish_phrases / max(total_words, 1) * 100
         vernacular_density = vernacular_markers / max(total_words, 1) * 100
@@ -155,19 +199,31 @@ class TheoreticalAnalyzer:
         # Alignment score: how well it embodies SRTOL principles
         alignment = min(1.0, code_switch_ratio / 5)
 
+        qualitative = {
+            'code_switching_instances': spanish_phrases,
+            'vernacular_markers': vernacular_markers,
+            'gesture_descriptions': gesture_markers,
+            'cultural_authenticity': 'High' if gesture_markers > 5 else 'Medium' if gesture_markers > 2 else 'Low',
+            'linguistic_ownership': 'Strong' if code_switch_ratio > 3 else 'Moderate' if code_switch_ratio > 1 else 'Weak'
+        }
+
+        quantitative = {
+            'consistency_score': round(consistency, 3),
+            'alignment_score': round(alignment, 3),
+            'code_switch_ratio': round(code_switch_ratio, 2),
+            'marker_words': marker_words  # LIST THE WORDS
+        }
+
+        # Generate sophisticated theoretical analysis
+        analysis = self.frameworks.srtol_analysis(
+            metrics={'qualitative': qualitative, 'quantitative': quantitative},
+            text=text
+        )
+
         return {
-            'qualitative': {
-                'code_switching_instances': spanish_phrases,
-                'vernacular_markers': vernacular_markers,
-                'gesture_descriptions': gesture_markers,
-                'cultural_authenticity': 'High' if gesture_markers > 5 else 'Medium' if gesture_markers > 2 else 'Low',
-                'linguistic_ownership': 'Strong' if code_switch_ratio > 3 else 'Moderate' if code_switch_ratio > 1 else 'Weak'
-            },
-            'quantitative': {
-                'consistency_score': round(consistency, 3),
-                'alignment_score': round(alignment, 3),
-                'code_switch_ratio': round(code_switch_ratio, 2)
-            }
+            'qualitative': qualitative,
+            'quantitative': quantitative,
+            'analysis': analysis  # NEW: Add interpretive analysis
         }
 
     def analyze_multiliteracies(self, text: str) -> Dict[str, Any]:
@@ -335,22 +391,37 @@ class TheoreticalAnalyzer:
         consistency = min(1.0, len(code_switches) / 8)
         alignment = min(1.0, (len(code_switches) - seamless_markers) / 5)
 
+        # Extract marker words
+        marker_words = [s['text'] for s in code_switches]
+
+        qualitative = {
+            'total_code_switches': len(code_switches),
+            'beginning_switches': len(beginning),
+            'middle_switches': len(middle),
+            'end_switches': len(end),
+            'seamless_integration': len(code_switches) - seamless_markers,
+            'marked_switches': seamless_markers,
+            'grammatical_blending': blended_structures,
+            'meshing_style': 'Seamless' if seamless_markers == 0 else 'Mixed' if seamless_markers < len(code_switches) / 2 else 'Marked'
+        }
+
+        quantitative = {
+            'consistency_score': round(consistency, 3),
+            'alignment_score': round(alignment, 3),
+            'code_mesh_ratio': round(len(code_switches) / max(total_words, 1) * 100, 2),
+            'marker_words': marker_words  # LIST THE WORDS
+        }
+
+        # Generate sophisticated theoretical analysis
+        analysis = self.frameworks.code_meshing_analysis(
+            metrics={'qualitative': qualitative, 'quantitative': quantitative},
+            text=text
+        )
+
         return {
-            'qualitative': {
-                'total_code_switches': len(code_switches),
-                'beginning_switches': len(beginning),
-                'middle_switches': len(middle),
-                'end_switches': len(end),
-                'seamless_integration': len(code_switches) - seamless_markers,
-                'marked_switches': seamless_markers,
-                'grammatical_blending': blended_structures,
-                'meshing_style': 'Seamless' if seamless_markers == 0 else 'Mixed' if seamless_markers < len(code_switches) / 2 else 'Marked'
-            },
-            'quantitative': {
-                'consistency_score': round(consistency, 3),
-                'alignment_score': round(alignment, 3),
-                'code_mesh_ratio': round(len(code_switches) / max(total_words, 1) * 100, 2)
-            }
+            'qualitative': qualitative,
+            'quantitative': quantitative,
+            'analysis': analysis  # NEW: Add interpretive analysis
         }
 
     def analyze_big_data(self, text: str) -> Dict[str, Any]:
