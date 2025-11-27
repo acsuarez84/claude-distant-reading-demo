@@ -54,6 +54,14 @@ async function init() {
     // Initialize first view
     showView('text');
     updateTextView();
+
+    // Hide loading overlay
+    const loadingOverlay = document.getElementById('loading-overlay');
+    if (loadingOverlay) {
+        setTimeout(() => {
+            loadingOverlay.classList.add('hidden');
+        }, 300);  // Small delay for smooth transition
+    }
 }
 
 // ============================================================================
@@ -282,7 +290,7 @@ function updateWordCloudView() {
         WordCloud(container, {
             list: wordCloudData,
             gridSize: 10,
-            weightFactor: 8,
+            weightFactor: 6,  // Reduced for smaller canvas
             fontFamily: 'Arial, sans-serif',
             color: function() {
                 const colors = ['#0066CC', '#2D7D2D', '#D4A017', '#9B59B6', '#FF6B35'];
@@ -290,6 +298,9 @@ function updateWordCloudView() {
             },
             rotateRatio: 0.3,
             backgroundColor: 'white',
+            drawOutOfBound: false,  // Don't draw words outside canvas
+            shrinkToFit: true,  // Shrink words to fit
+            minSize: 8,  // Minimum font size
             click: function(item) {
                 showWordDetails(item[0], parameter);
             }
@@ -310,7 +321,11 @@ function collectThemesForWordCloud(parameter, selectedLLMs) {
             if (response.parameters[parameter]) {
                 const themes = response.parameters[parameter].themes;
                 themes.forEach(theme => {
-                    themeCounts[theme.word] = (themeCounts[theme.word] || 0) + theme.count;
+                    // Filter out single letters, dashes, and short meaningless words
+                    const word = theme.word.trim();
+                    if (word.length > 1 && !word.match(/^[-–—]+$/) && word.length > 2) {
+                        themeCounts[word] = (themeCounts[word] || 0) + theme.count;
+                    }
                 });
             }
         });
@@ -1027,8 +1042,8 @@ function buildChartData() {
 
 function getChartOptions() {
     const baseOptions = {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: false,  // Fixed size: 400×300
+        maintainAspectRatio: true,
         plugins: {
             legend: {
                 labels: {
