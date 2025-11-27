@@ -1027,8 +1027,8 @@ function buildChartData() {
 
 function getChartOptions() {
     const baseOptions = {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: false,  // Fixed size: 400×300
+        maintainAspectRatio: true,
         plugins: {
             legend: {
                 labels: {
